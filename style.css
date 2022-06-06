@@ -29,11 +29,7 @@
   top: 0%;
   bottom: 0%;
   height: 80px;
-  /* Основные / Белый */
-
   background: #FFFFFF;
-  /* Доп. / Хедер и футер */
-
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -47,7 +43,6 @@
   align-items: center;
   height: 80px;
   max-width: 1207px;
-  /* background: transparent; */
 }
 
 .navbar__brand {
@@ -235,6 +230,7 @@
     width: 270px;
     height: 120px;
   }
+
 }
 
 @media (max-width: 510px) {
@@ -285,5 +281,5 @@
   .main__section:after {
     flex: 0 1 335px;
   }
-  
+
 }
