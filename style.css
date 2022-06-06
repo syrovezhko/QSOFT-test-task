@@ -170,6 +170,7 @@
 
 .main__section__card:hover {
   box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+  transition: 1s;
 }
 
 .main__section__card_img {
