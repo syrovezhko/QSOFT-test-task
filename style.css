@@ -22,6 +22,21 @@
   flex-shrink: 0;
 }
 
+.header_shadow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0%;
+  bottom: 0%;
+  height: 80px;
+  /* Основные / Белый */
+
+  background: #FFFFFF;
+  /* Доп. / Хедер и футер */
+
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -32,6 +47,7 @@
   align-items: center;
   height: 80px;
   max-width: 1207px;
+  /* background: transparent; */
 }
 
 .navbar__brand {
@@ -117,7 +133,7 @@
 }
 
 .main__header {
-  margin-top: 70px;
+  margin-top: 150px;
   margin-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
@@ -149,6 +165,7 @@
   border: 1px solid #EBEBF1;
   border-radius: 5px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .main__section__card:hover {
@@ -170,6 +187,31 @@
     margin-left: 50px;
   }
   
+  .main__header {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .main__section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main__section__card {
+    width: 229px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .main__section__card_img {
+    width: 199px;
+    padding: 26px 3px 25px 3px;
+  }
+
+  .main__section:after {
+    flex: 0 1 229px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -190,6 +232,10 @@
     display: none;
   }
 
+  .main__section__card {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -215,4 +261,30 @@
     left: 22px;
   }
 
+  .header_shadow {
+    height: 105px;
+  }
+
+  .main__section {
+    justify-content: center;
+  }
+
+  .main__header {
+    margin-top: 175px;
+  }
+
+  .main__section__card {
+    width: 335px;
+    height: 140px;
+  }
+
+  .main__section__card_img {
+    width: 300px;
+    padding: 30px;
+  }
+
+  .main__section:after {
+    flex: 0 1 335px;
+  }
+  
 }
