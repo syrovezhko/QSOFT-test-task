@@ -54,8 +54,6 @@
   padding-left: 20px;
 }
 
-.navbar__brand_img {}
-
 .navbar__search-form {
   display: flex;
   flex-grow: 1;
